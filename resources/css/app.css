@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+/* Light mode theme */
+html.light-mode body {
+    background-color: #f8fafc !important;
+    color: #111827 !important;
+}
+
+/* Main page backgrounds */
+html.light-mode [class~="bg-[#0a0a0a]"],
+html.light-mode [class~="bg-[#0d0d0d]"] {
+    background-color: #f8fafc !important;
+}
+
+html.light-mode [class~="bg-[#111111]"] {
+    background-color: #ffffff !important;
+}
+
+/* Text colours */
+html.light-mode [class~="text-white"]:not([class~="bg-orange-500"]) {
+    color: #111827 !important;
+}
+
+html.light-mode [class~="text-gray-300"] {
+    color: #374151 !important;
+}
+
+html.light-mode [class~="text-gray-400"] {
+    color: #4b5563 !important;
+}
+
+html.light-mode [class~="text-gray-500"],
+html.light-mode [class~="text-gray-600"] {
+    color: #6b7280 !important;
+}
+
+/* Borders */
+html.light-mode [class~="border-white/10"] {
+    border-color: #e5e7eb !important;
+}
+
+/* Orange accents */
+html.light-mode [class~="text-orange-400"] {
+    color: #ea580c !important;
+}
+
+/* Theme toggle in light mode */
+html.light-mode #theme-toggle {
+    color: #111827;
+    border-color: #d1d5db;
+}
+
